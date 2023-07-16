@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { AiFillEye } from "react-icons/ai";
 import iconTitle from "../../Imagens/iconTitle.png";
-import "../Styles/StyleContents/Profile.css";
 import api from "../../services/api";
-import { Link } from "react-router-dom";
+import "../Styles/StyleContents/Profile.css";
 
 function Profile() {
   const [projects, setProjects] = useState([]);
@@ -33,10 +32,10 @@ function Profile() {
   return (
     <>
       <div>
-        <div className="profile-infos">
+        <div className="profile-infos edit-profile">
           <div className="tx-form">
             <img alt="" id="imgicon" src={iconTitle} />
-            <h4>Hist</h4>
+            <h4>Histórico</h4>
           </div>
           {projects
             ? projects.map((project) => (

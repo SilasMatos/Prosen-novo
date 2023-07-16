@@ -1,14 +1,12 @@
-import React, { useState, useRef, useEffect } from "react";
-import imgForm from "../../Imagens/imageForm.png";
-import "../Styles/StyleContents/PublicarProjeto.css";
-import api from "../../services/api";
-import { useContext } from "react";
-import { UserContext } from "../useContext/UserContext";
-import {FaUpload} from 'react-icons/fa'
-import Upload from '../../Imagens/Upload.png';
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import iconTitle from "../../Imagens/iconTitle.png"
+import Swal from "sweetalert2";
+import Upload from '../../Imagens/Upload.png';
+import iconTitle from "../../Imagens/iconTitle.png";
+import api from "../../services/api";
 import NavBar from "../Navbar/Navbar";
+import "../Styles/StyleContents/PublicarProjeto.css";
+import { UserContext } from "../useContext/UserContext";
 
 const EditProject = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
@@ -53,11 +51,19 @@ const EditProject = () => {
       alert("Projeto atualizado com Sucesso!");
       navigate('/repositorios');
       console.log(response.data); // Mensagem de sucesso e dados do evento
-
+      Swal.fire({
+        icon: "success",
+        title: "Sucesso!",
+        text: "Projeto Atualizado com Sucesso.",
+      });
       // Faça algo com a resposta, como redirecionar para outra página
     } catch (error) {
       console.error(error);
-      alert("Desculpe o Projeto não foi atualizado, verifique todos os campos");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Ocorreu um erro ao fazer a atualização do projeto. Verifique todos os campos e tente novamente.",
+      });
       // Trate o erro aqui
     }
   };
@@ -245,18 +251,16 @@ const EditProject = () => {
                 </div>
                 <div>
                   <label className="edit-label">Autores</label>
-                  <select
+                  <input
+                    type="text"
                     name="authors"
                     className="input"
                     value={authors}
                     onChange={(e) => {
                       setAuthors(e.target.value);
                     }}
-                  >
-                    <option value="aluno1">aluno1</option>
-                    <option value="aluno2">aluno2</option>
-                    <option value="aluno3">aluno3</option>
-                  </select>
+                  />
+            
                 </div>
               </div>
               <div className="img-form-input">

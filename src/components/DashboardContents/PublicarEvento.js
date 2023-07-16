@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import Upload from "../../Imagens/Upload.png";
 import iconTitle from "../../Imagens/iconTitle.png";
 import api from "../../services/api";
@@ -77,16 +78,23 @@ const PublicarEvento = () => {
       });
 
       const response = await api.post(url, data);
-      alert("Sucesso, Evento Publicado!");
+      Swal.fire({
+        icon: "success",
+        title: "Sucesso!",
+        text: "Evento Postado com Sucesso.",
+      });
+ 
       navigate("/eventos");
       console.log(response.data); // Mensagem de sucesso e dados do evento
 
       // Faça algo com a resposta, como redirecionar para outra página
     } catch (error) {
       console.error(error);
-      alert(
-        "Publicação do Evento falhou, verifique se todos os campos estão preenchidos corretamente"
-      );
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Ocorreu um erro ao fazer a postagem do evento. Verifique todos os campos e tente novamente.",
+      });
       // Trate o erro aqui
     }
   };

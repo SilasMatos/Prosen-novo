@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import Upload from '../../Imagens/Upload.png';
 import iconTitle from "../../Imagens/iconTitle.png";
 import api from "../../services/api";
@@ -51,11 +52,19 @@ const CadastrarProfessor = () => {
     
       console.log(message);
       // Redirecione para a página desejada
-      alert("cadastro feito")
+      Swal.fire({
+        icon: "success",
+        title: "Sucesso!",
+        text: "Cadastro do professor realizado com sucesso.",
+      });
       navigate("/dashboard");
     } catch (error) {
       console.error(error);
-      alert(error)
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Ocorreu um erro ao fazer o cadastro de professor. Verifique todos os campos e tente novamente.",
+      });
     }
   };
 

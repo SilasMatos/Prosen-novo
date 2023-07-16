@@ -49,12 +49,12 @@ const Eventos = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">Palavras-chaves</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
-                    Another action
+                    Orientador
                   </Dropdown.Item>
                   <Dropdown.Item href="#/action-3">
-                    Something else
+                    Autores
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

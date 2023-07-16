@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import Upload from '../../Imagens/Upload.png';
 import iconTitle from "../../Imagens/iconTitle.png";
 import api from "../../services/api";
@@ -45,14 +46,24 @@ const PublicarProjeto = () => {
       data.append("authors", authors);
       data.append("file", file);
       const response = await api.post(url, data);
-      alert("Projeto Postado com Sucesso!");
+      Swal.fire({
+        icon: "success",
+        title: "Sucesso!",
+        text: "Projeto Postado com Sucesso.",
+      });
+   
       navigate('/repositorios');
       console.log(response.data); // Mensagem de sucesso e dados do evento
 
       // Faça algo com a resposta, como redirecionar para outra página
     } catch (error) {
       console.error(error);
-      alert("Desculpe o Projeto não foi postado, verifique todos os campos");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Ocorreu um erro ao fazer a postagem do projeto. Verifique todos os campos e tente novamente.",
+      });
+   
       // Trate o erro aqui
     }
   };

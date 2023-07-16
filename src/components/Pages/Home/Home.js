@@ -45,7 +45,7 @@ export const Home = () => {
           <div className="text-column">
             
             <div className="container edit-text">
-              
+              <div className="container">
               <h2 className="section-heading">SENAI Feira de Santana</h2>
               <p id="par-tx-edit">
                 O Senai Feira de Santana tem como diferencial o uso de
@@ -76,6 +76,8 @@ export const Home = () => {
                 <button className="btn-edit-loc">SAIBA MAIS</button>
                 </a>
               </div>
+              </div>
+              
             </div>
           </div>
           <div className="image-container">
@@ -138,11 +140,14 @@ export const Home = () => {
         </div>
       </div>
       <div className="container-fluid edit-cont-cards">
+
         {
-          eventos.map((events)=>(
+          eventos.map((events)=>( 
             <div className="divEvent"><CardEvent id={events._id} title={events.title} local={events.local} startDate={events.startDate}/></div>
           ) )
         }
+        
+
         
 
       </div>

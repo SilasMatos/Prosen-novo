@@ -49,8 +49,12 @@ function Equipe() {
               <br /> Gerenciais (MIS) na empresa Tel Centro de Contatos.
             </p>
             <div id="icons-divs">
+              <a href="mailto:erik_marques@hotmail.com">
               <AiOutlineMail id="icons-equipe" />
+              </a>
+              <a href="https://www.linkedin.com/in/erik-do-carmo-marques-a11289145/">
               <AiFillLinkedin id="icons-equipe" />
+              </a>
             </div>
           </div>
         </div>
@@ -73,8 +77,12 @@ function Equipe() {
               outros.
             </p>
             <div id="icons-divs-2">
+            <a href="mailto:ingrid.passos@fieb.org.br">
               <AiOutlineMail id="icons-equipe" />
+              </a>
+              <a href="https://www.linkedin.com/in/ingridbarreto/">
               <AiFillLinkedin id="icons-equipe" />
+              </a>
             </div>
           </div>
         </div>
@@ -91,11 +99,16 @@ function Equipe() {
           <div class="container edit1">
             <h4 id="edit-tx-h4">Welber Lima de Brito Guimarães</h4>
             <p id="edit-tx">
-            Graduado em Administração, Pós-Graduado em Gestão Empresarial, iniciei minha trajetória profissional<br/> como Estagiário do SENAI, me tornei Assistente Administrativo, depois Analista de Suporte ao Negócio, <br/>atuei como Coordenador de Cursos na Região Norte e atualmente exerço a função de Coordenador de Cursos <br/>nas áreas de Gestão e Tecnologia da Informação no SENAI Feira de Santana.
+            Graduado em Administração, Pós-Graduado em Gestão Empresarial, iniciou a trajetória profissional<br/> como Estagiário do SENAI, e se tornou Assistente Administrativo, depois Analista de Suporte ao Negócio,<br/> também já atuou como Coordenador de Cursos na Região Norte e atualmente exerce a função de Coordenador de Cursos nas <br/> áreas de Gestão e Tecnologia da Informação no SENAI Feira de Santana. 
+          
             </p>
             <div id="icons-divs">
+            <a href="mailto:welber.91.wl@gmail.com">
               <AiOutlineMail id="icons-equipe" />
+              </a>
+              <a href="https://www.linkedin.com/in/welber-lima-de-brito-guimar%C3%A3es-295183169/">
               <AiFillLinkedin id="icons-equipe" />
+              </a>
             </div>
           </div>
         </div>
@@ -245,11 +258,7 @@ function Equipe() {
           <div class="container edit1-v2">
             <h4 id="edit-tx-h4-v2">Silas Silva Lima de Matos</h4>
             <p id="edit-tx-v2">
-              Estudante dedicado do curso de desenvolvimento de sistemas no
-              Senai, com experiência em JavaScript, Node.js, React.js e MongoDB.
-              Sua paixão pela tecnologia e busca contínua de conhecimento o
-              tornam um promissor desenvolvedor em ascensão,pronto para
-              enfrentar desafios e contribuir com soluções inovadoras.
+            Sou um desenvolvedor formado pelo Senai no curso técnico em desenvolvimento de sistemas, com experiência em JavaScript, Node.js, React.js e MongoDB, e atualmente estou cursando análise e desenvolvimento de sistemas. Estou pronto para enfrentar desafios e contribuir com soluções inovadoras, sempre em busca de conhecimento e crescimento profissional.
             </p>
             <div id="icons-divs-2">
               <AiOutlineMail id="icons-equipe" />
@@ -269,14 +278,12 @@ function Equipe() {
           <div class="container edit1">
             <h4 id="edit-tx-h4">João Henrique Neri de Sousa</h4>
             <p id="edit-tx">
-              Estudante de Desenvolvimento de Sistemas no Senai e em paralelo
-              cursando o Superior em Bacharelado <br />
-              em Sistemas de Informação no IFBA- Instituto Federal da Bahia. Com
-              interesse na área de desenvolvimento <br />
-              de sistemas, e acredito que a área de desenvolvimento de softwares
-              é uma área muito interessante e em constante mudança. Sempre muito
+              Estudante do curso Bacharelado 
+              em Sistemas de Informação no IFBA - Instituto Federal da Bahia, já tendo completado o curso de Desenvolvimento de Sistemas no Senai Bahia.<br/>
+              Com grande interesse na área de desenvolvimento 
+              de softwares e sistemas, acumula experiência em JavaScript, utilizando frameworks para desenvolvimento como: React.js, Node.js, e também com bancos relacionais e não relacionais como MySQL e MongoDB. Sempre muito
               interessado em aprender mais sobre a profissão de desenvolvedor de
-              software.
+              software, se encontra em constante Evolução.
             </p>
             <div id="icons-divs">
               <AiOutlineMail id="icons-equipe" />
@@ -293,14 +300,7 @@ function Equipe() {
           <div class="container edit1-v2">
             <h4 id="edit-tx-h4-v2">Jean da Silva Freitas</h4>
             <p id="edit-tx-v2">
-              Um estudante promissor no campo do desenvolvimento de sistemas.
-              Movido pela curiosidade e pelo desejo de criar soluções inovadoras
-              para desafios complexos. Entusiasta do back-end, possui um
-              profundo conhecimento das linguagens de programação e estruturas
-              relacionadas ao desenvolvimento de sistemas. Dominio de
-              habilidades em linguagens como Java, JavaScript e PHP, além de
-              estar sempre atualizado com as mais recentes tendências e
-              tecnologias nesse campo em constante evolução.
+            Sou um estudante promissor no campo do desenvolvimento de sistemas, focado no back-end e com profundo conhecimento em linguagens como Java, JavaScript e PHP. Busco constantemente aprimorar minhas habilidades e me manter atualizado com as últimas tendências tecnológicas. Com formação técnica pelo Senai e atualmente cursando Análise e Desenvolvimento de Sistemas, busco uma carreira desafiadora e gratificante, aplicando meu conhecimento para criar soluções inovadoras e eficientes para desafios complexos no universo da tecnologia.
             </p>
             <div id="icons-divs-2">
               <AiOutlineMail id="icons-equipe" />

@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import Search from "../../Imagens/search.png";
+import React, { useContext, useEffect, useState } from "react";
 import { Dropdown } from "react-bootstrap";
-import TabelaDashboard from "../Tabela/TabelaDashboard";
-import api from "../../services/api";
-import { useContext } from "react";
-import { UserContext } from "../useContext/UserContext";
 import { Link } from "react-router-dom";
+import Search from "../../Imagens/search.png";
+import api from "../../services/api";
+import TabelaDashboard from "../Tabela/TabelaDashboard";
+import { UserContext } from "../useContext/UserContext";
 
 function EditarProjeto(){
   const[project, setProject] = useState([]);
@@ -52,13 +51,9 @@ function EditarProjeto(){
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
+                <Dropdown.Item href="#/action-1">Palavras-Chaves</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Orientador</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Autores</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>

@@ -3,12 +3,11 @@ import { BiEdit } from "react-icons/bi";
 import api from "../../services/api";
 import "../Styles/StyleContents/Profile.css";
 import { UserContext } from "../useContext/UserContext";
-import { Link } from "react-router-dom";
 
 function Profile() {
   const [userData, setUserData] = useContext(UserContext);
   const [user, setUser] = useState([]);
-  const [project, setProject] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   async function init() {
     try {
@@ -22,9 +21,9 @@ function Profile() {
 
   async function getUserProjects() {
     try {
-      const project = await api.get(`/project/${userData.id}`);
-      const { data } = project;
-      setProject(data.projects);
+      const projects = await api.get(`/project/${userData.id}`);
+      const { data } = projects;
+      setProjects(data.projects.slice(0, 3)); // Mostra apenas os 3 primeiros projetos
     } catch (error) {
       console.log(error);
     }
@@ -85,16 +84,20 @@ function Profile() {
           <div className="title-profile">
             <h4>Atividade Recente</h4>
           </div>
-          {project.map((project) => (
-            <div className="profile-itens">
-              <p>{formatarDataBrasileira(project.date)}</p>
-              <p>{project.type}</p>
-              <p>{project.linkEvent}</p>
-              <a href={`EditarProjeto/${project._id}`}>
-                <BiEdit id="icon-profile" />
-              </a>
-            </div>
-          ))}
+          {projects.length > 0 ? (
+            projects.map((project) => (
+              <div className="profile-itens">
+                <p>{formatarDataBrasileira(project.date)}</p>
+                <p>{project.type}</p>
+                <p>{project.linkEvent}</p>
+                <a href={`EditarProjeto/${project._id}`}>
+                  <BiEdit id="icon-profile" />
+                </a>
+              </div>
+            ))
+          ) : (
+            <p id="Aviso-edit">Não possui atividades recentes.</p>
+          )}
         </div>
       </div>
     </>

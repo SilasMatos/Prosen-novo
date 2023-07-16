@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
-import Search from "../../Imagens/search.png";
+import React, { useContext, useEffect, useState } from "react";
 import { Dropdown } from "react-bootstrap";
-import TabelaEditEvent from "../Tabela/TabelaEditEvent";
-import api from "../../services/api";
-import { UserContext } from "../useContext/UserContext";
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Search from "../../Imagens/search.png";
+import api from "../../services/api";
+import TabelaEditEvent from "../Tabela/TabelaEditEvent";
+import { UserContext } from "../useContext/UserContext";
 
 function EditarEvento(){
 
@@ -58,13 +57,9 @@ function EditarEvento(){
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
+                <Dropdown.Item href="#/action-1">Palavras-Chaves</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Orientador</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Autores</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>

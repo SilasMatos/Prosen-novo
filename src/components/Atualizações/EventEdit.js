@@ -1,20 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
-import imgForm from "../../Imagens/imageForm.png";
-import "../Styles/StyleContents/PublicarEvento.css";
-import { useDropzone } from "react-dropzone";
-import "../Styles/InputFile.css";
-import { AiOutlinePlus } from "react-icons/ai";
-import api from "../../services/api";
-import { useContext } from "react";
-import { UserContext } from "../useContext/UserContext";
-import Upload from "../../Imagens/Upload.png";
-import AddImageEvent from "../../Imagens/AddImageEvent.png";
-import { useNavigate } from "react-router-dom";
-import iconTitle from "../../Imagens/iconTitle.png";
-import { useParams } from "react-router-dom";
-import NavBar from "../Navbar/Navbar";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Navbar } from "react-bootstrap";
-
+import { useDropzone } from "react-dropzone";
+import { useNavigate, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
+import Upload from "../../Imagens/Upload.png";
+import iconTitle from "../../Imagens/iconTitle.png";
+import api from "../../services/api";
+import "../Styles/InputFile.css";
+import "../Styles/StyleContents/PublicarEvento.css";
+import { UserContext } from "../useContext/UserContext";
 const PublicarEvento = () => {
   const [userData, setUserData] = useContext(UserContext);
   const [files, setFiles] = useState([]);
@@ -109,16 +103,23 @@ const PublicarEvento = () => {
       });
 
       const response = await api.put(url, data);
-      alert("Sucesso, Evento atualizado!");
+   
       navigate("/eventos");
       console.log(response.data); // Mensagem de sucesso e dados do evento
-
+      Swal.fire({
+        icon: "success",
+        title: "Sucesso!",
+        text: "Evento Atualizado com Sucesso.",
+      });
       // Faça algo com a resposta, como redirecionar para outra página
     } catch (error) {
       console.error(error);
-      alert(
-        "Publicação do Evento falhou, verifique se todos os campos estão preenchidos corretamente"
-      );
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Ocorreu um erro ao fazer a atualização do evento. Verifique todos os campos e tente novamente.",
+      });
+      
       // Trate o erro aqui
     }
   };

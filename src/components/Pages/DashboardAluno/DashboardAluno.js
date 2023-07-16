@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BiExit } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
-import imgEquipe2 from "../../../Imagens/foto1.jpg";
+import api from "../../../services/api";
 import Profile from "../../DashboardContentsAluno/Profile";
 import NavBar from "../../Navbar/Navbar";
 import "../../Styles/StyleContents/DashboardAluno.css";
-import { useContext } from "react";
 import { UserContext } from "../../useContext/UserContext";
-import api from "../../../services/api";
 
 const DashboardAluno = () => {
   const [activeComponent, setActiveComponent] = useState("perfil");
@@ -66,9 +64,10 @@ const DashboardAluno = () => {
   return (
     <>
       <NavBar />
+      <div className="container">
       <div className="dashboard-opa">
         <div className="">
-          <div className="content-avatar-center">
+          <div className="content-avatar-center edit-aluno-container">
           <div class="avatar-w">
           {user && user.file && user.file.key ? (
               <img
@@ -96,7 +95,7 @@ const DashboardAluno = () => {
             </p>
           </div>
         </div>
-        <div className="nav-button-position">
+        <div className="nav-button-position-side">
           <button className="nav-button-exit" onClick={logoutHandler}>
             Sair Da Conta <BiExit id="icon-exit" />
           </button>
@@ -104,6 +103,7 @@ const DashboardAluno = () => {
         </div>
         <div className="content">{renderComponent()}</div>
         
+      </div>
       </div>
     </>
   );

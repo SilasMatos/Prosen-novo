@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 import Upload from '../../Imagens/Upload.png';
 import iconTitle from "../../Imagens/iconTitle.png";
 import api from "../../services/api";
 import "../Styles/StyleContents/PublicarProjeto.css";
 import { UserContext } from "../useContext/UserContext";
-import { useParams } from "react-router-dom";
 
 const ProfessoresEdit = () => {
 
@@ -70,11 +70,19 @@ const ProfessoresEdit = () => {
     
       console.log(message);
       // Redirecione para a página desejada
-      alert("Atualização Feita!")
+      Swal.fire({
+        icon: "success",
+        title: "Sucesso!",
+        text: "Professor Atualizado com Sucesso.",
+      });
       navigate("/dashboard");
     } catch (error) {
       console.error(error);
-      alert(error)
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Ocorreu um erro ao fazer a atualização do Professor. Verifique todos os campos e tente novamente.",
+      });
     }
   };
 

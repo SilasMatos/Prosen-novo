@@ -50,7 +50,7 @@ function NavBar() {
               {userData.logado ? (
                 <Link to={"/dashboard"}>
                   <Nav.Link id="link-nav" href="#link">
-                    Bem vindo {userData.nameUser}
+                    Olá, {userData.nameUser}
                   </Nav.Link>
                 </Link>
               ) : (
