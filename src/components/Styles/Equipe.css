@@ -1,0 +1,162 @@
+.sec-equipe-1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.imageAdmin{
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.sec-equipe-2 {
+    background-color: #2E2E2E;
+    color: #fff;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    height: 340px;
+}
+
+.edit1 {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 20px;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+#edit-tx {
+    color: #fff;
+}
+
+.image-container-s {
+    position: relative;
+    right: -25px;
+    bottom: -15px;
+}
+
+#edit-tx-h4 {
+    color: #fff;
+}
+
+#icons-divs {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+#icons-equipe {
+    color: #F7971D;
+    font-size: 20pt;
+}
+
+#imgBorder{
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sec-equipe-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-container-s {
+        right: auto;
+        bottom: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .sec-equipe-2 {
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .edit1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+/*******************************************************************/
+.sec-equipe-2-v2 {
+    background-color: #EDEDED;
+    color: #000000;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: flex-end;
+    height: 340px;
+}
+
+.edit1-v2 {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 20px;
+    justify-content: flex-end;
+    text-align: end;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+#edit-tx-h4-v2 {
+    color: #000000;
+    padding-right: 40px;
+}
+
+#edit-tx-v2 {
+    color: #000000;
+    padding-right: 40px;
+}
+
+#icons-divs-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 60px;
+}
+
+.image-container2 {
+    position: relative;
+    right: 15px;
+    bottom: -52px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sec-equipe-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sec-equipe-2-v2 {
+        height: auto;
+        padding: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .edit1-v2 {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    #icons-divs-2 {
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .image-container2 {
+        right: auto;
+        bottom: auto;
+        margin-bottom: 1rem;
+    }
+}

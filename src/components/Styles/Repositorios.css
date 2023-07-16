@@ -1,0 +1,84 @@
+.boxModel{
+    margin-top: 3rem;
+}
+
+.modelDrop{
+    margin-left: 3px;
+    background-color: #116BC6;
+    border-radius: 8px 0px 0px 8px;
+    height: 45px;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.modelDrop:focus{
+    background-color: none;
+}
+
+
+
+.repoSearch{
+    width: 800px;
+    height: 45px;
+    background: #FEFDFE;
+    border: 2px solid #145EA8;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 0px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B2B2B2;
+}
+
+.table-edit{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.controllers{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.controllers img{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.controllers img:first-child{
+    margin-right: 50px;
+}
+.controllers img:last-child{
+    margin-left: 50px;
+}
+
+
+@media (max-width: 600px) {
+    .modelDrop {
+        width: 100%; 
+        border-radius: 8px 0px 0px 8px;
+        margin-left: 0; 
+        font-size: 11px;
+
+    }
+
+    .controllers img{
+        padding: 2px;
+        cursor: pointer;
+    }
+    
+    .controllers img:first-child{
+        margin-right: 30px;
+    }
+    .controllers img:last-child{
+        margin-left: 30px;
+    }
+}

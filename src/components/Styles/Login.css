@@ -1,0 +1,168 @@
+#logo-form{
+  padding-top: -5;
+}
+.div-form-text{
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.div-form-text h3{
+  margin-top: 5px;
+  font-family: 'Rambla', sans-serif; 
+  
+}.center-edit {
+  text-align: center;
+  position: relative;
+  padding: 50px 50px;
+  background: #123a60;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center-edit h3 {
+  font-size: 2em;
+  border-left: 5px solid dodgerblue;
+  padding: 10px;
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.center-edit .inputbox-2 {
+  position: relative;
+  width: 300px;
+  border-radius: 20px;
+  height: 50px;
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+.center-edit .inputbox-2 input {
+  position: relative;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+
+  outline: none;
+  background: none;
+  padding: 10px;
+  padding-top: 10px;
+  font-size: 1.2em;
+  padding-right: 30px; 
+}
+
+.center-edit .inputbox-2:last-child {
+  margin-bottom: 0;
+}
+
+.center-edit .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+
+
+.div-buttom{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.btn-form{
+  color: #fff;
+  font-size:18pt;
+  font-weight: 300;
+
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #f7971d;
+background-image: linear-gradient(160deg, #f7971d 0%, #d27807 100%);
+
+
+}
+.login-sec{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  
+}
+
+#icon-form{
+color: #037df8;
+font-size: 18pt;
+margin-bottom: 5px;
+  color: linear-gradient(160deg, #037df8 0%, #145ea8 100%);
+
+}
+#icon-form-user{
+  color: #037df8;
+  font-size: 16pt;
+  margin-bottom: 5px;
+    color: linear-gradient(160deg, #037df8 0%, #145ea8 100%);
+
+  }
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .login-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-edit {
+    padding: 30px;
+  }
+
+  .div-form-text {
+    margin-bottom: 20px;
+  }
+
+  .center-edit h3 {
+    font-size: 1.5em;
+  }
+
+  .center-edit .inputbox {
+    width: 100%;
+  }
+
+  .div-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-form {
+    width: 100%;
+  }
+  .div-img-form{
+      display: none;
+  }
+}
+
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .center-edit {
+    padding: 40px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .center-edit {
+    padding: 50px;
+  }
+}

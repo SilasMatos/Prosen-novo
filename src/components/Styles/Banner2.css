@@ -1,0 +1,80 @@
+.content-container {
+    position: relative;
+    padding-top: 90vh;
+  }
+  #circle-edit{
+    color: #F7971D;
+    font-size: 50pt;
+    margin-left: 0;
+    margin-right: 25px;
+  }
+  .bannerEquipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Imagens/banner-2.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .bannerEquipe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  .bannerEquipe .hero-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .bannerEquipe .hero-content h1 {
+    font-size: 5.5rem;
+    color: white;
+    font-family: 'Rambla';
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 768px) {
+    .bannerEquipe .hero-content h1 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bannerEquipe .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    #circle-edit{
+      color: #F7971D;
+      font-size: 12pt;
+ 
+    }
+  }
+  
+  
+  .tx-cont {
+    text-align: center;
+    margin-top: 6rem;
+    
+  }
+  
+  .tx-cont h1 {
+    font-size: 3.5rem;
+    display: flex;
+    text-align: left;
+    color: #13304D;
+    font-family: 'Rambla', sans-serif;
+  }

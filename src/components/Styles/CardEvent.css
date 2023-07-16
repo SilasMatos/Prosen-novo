@@ -1,0 +1,108 @@
+.Card-div-1{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 380px;
+    margin-bottom: 5rem;
+    border-radius : 0px 0px 10px 10px;
+    box-shadow:  13px 13px 26px #c3c3c3,
+             -13px -13px 26px #fdfdfd;
+}
+
+#img-card{
+    width: 280px;
+    margin-left: 9px;
+}
+
+.Card-div-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Card-div-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 26px;
+
+
+    font-family: 'Poppins', sans-serif;
+}
+.Card-div-3, h4{
+    color: #404040;
+    margin-top: 10px;
+}
+.Card-div-4{
+        display: flex;
+        flex-direction: row;
+
+        text-align: left;
+}
+.Card-div-4, p{
+    color: #404040;
+    margin-left: 2px;
+}
+.btn-cards{
+    margin-left: 15px;
+}
+.Card-div-5{
+    display: flex;
+        flex-direction: row;
+
+}
+#icon-cards{
+    color: #F2931A;
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+    font-size: 15pt;
+    padding-right: 3px;
+}
+.container-main{
+    display: flex;
+}
+.btn-cards{
+    background-color: #164F87;
+    width: 200px;
+    color: #fff;
+    height: 40px;
+    border: transparent;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.edit-cont-cards{
+    display: flex;
+    justify-content: center;
+
+}
+
+.edit-cont-cards div{
+    margin: 0px 10px 0px 6px;
+
+}
+.Card-div-3-edit, #embreve{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 26px;
+    margin-bottom: 67px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .edit-cont-cards {
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .container-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
+  

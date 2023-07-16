@@ -1,0 +1,234 @@
+#color-bg{
+  padding: 20px;
+}
+.itens-form{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 10px;
+}
+#color-bg{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px #d9d9d9, -5px -5px 16px #e7e7e7;
+}
+.itens-form-text{
+    display: flex;
+    margin-top: 1rem;
+    gap: 10px;
+}
+.tx-form{
+    display: flex;
+    margin-left: 22px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.edit-label{
+    margin-right: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.form-edit-section-size {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: solid 2px #D9D9D9;
+   
+  }
+  
+  .form-edit-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px 25px 25px 0px;
+    border-right: solid 2px #D9D9D9;
+    ;
+  }
+  
+  .img-form-input img {
+    width: 350px;
+    max-width: 95%;
+
+  }
+  
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  .uploaded-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .custom-uploaded-image {
+    width: 300px;
+  }
+  #imgicon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .tx-form{
+    display: flex;
+    align-items: center;
+    }
+  .input {
+    width: 100%;
+    padding: 12px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    outline: none;
+    color: dimgray;
+    margin: 0;
+    padding: 0;
+  }
+
+  .input:invalid {
+    animation: justshake 0.3s forwards;
+    color: red;
+  }
+  
+  .inputFileEvent{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px dashed #B2B2B2;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+  }
+
+  #UpIconAdd{
+    width: 26px;
+  height: 26px;
+
+
+  }
+
+  .ftn-file{
+    padding-bottom: 25px;
+
+  }
+
+  .selected-files{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .btn-event-remove {
+
+    background-image: linear-gradient(29deg, #037df8 0%, #145ea8 100%);
+    
+      padding: 10px 32px;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-left: 10px;
+      border-radius: 10px;
+      border: 2px dashed #0763c0;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .4s;
+     }
+     
+     .btn-event-remove span:last-child {
+      display: none;
+     }
+     
+     .btn-event-remove:hover {
+      transition: .4s;
+      border: 2px dashed #498bce;
+      background-image: linear-gradient(29deg, #ffffff 0%, #fbfbfb 100%);
+      color: #0f3961;
+     }
+     
+     .btn-event-remove:active {
+      background-color: #87dbd0;
+     } 
+    
+
+
+  @keyframes justshake {
+    25% {
+      transform: translateX(5px);
+    }
+  
+    50% {
+      transform: translateX(-5px);
+    }
+  
+    75% {
+      transform: translateX(5px);
+    }
+  
+    100% {
+      transform: translateX-(5px);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #color-bg {
+      padding: 10px;
+    }
+    
+    .itens-form,
+    .itens-form-text {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+    
+    .tx-form {
+      margin-left: 0;
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .form-edit-section-size,
+    .form-edit-section {
+      flex-direction: column;
+      margin-left: 0;
+      border: none;
+    }
+    
+    .img-form-input img {
+      width: 100%;
+    }
+    
+    .uploaded-image {
+      margin-right: 0;
+    }
+    
+    .custom-uploaded-image {
+      width: 100%;
+    }
+    
+    .inputFileEvent {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    
+    #UpIconAdd {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  

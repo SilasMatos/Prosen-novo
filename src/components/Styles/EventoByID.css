@@ -1,0 +1,165 @@
+.informs{
+    display: flex;
+}
+.imageToPost{
+    width: 300px;
+    height: 300px;
+}
+.paragrafs{
+    max-width: 750px;
+    margin-left: 25px;
+
+}
+.details{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #717171;
+    
+}
+.paragrafs p {
+    white-space: pre-line;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #404040;
+  }
+
+
+.infoTime{
+    display: flex;
+    
+}
+.eventTypes{
+    display: flex;
+}
+
+.userEvent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user{
+    width: 12px;
+
+}
+
+.photoStart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photoStart button{
+    
+    background: linear-gradient(180deg, #164F87 0%, #163D63 100%);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 16px;
+    color: #FFFFFF;
+    width: 223px;
+    height: 54px;
+    border: none;
+    margin-right: 25px;
+}
+
+.divFotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.divFotos img{
+    padding: 10px;
+    border: none;
+    border-radius: 24px;
+    margin-bottom: 10px;
+
+    
+}
+
+.divVideos{
+    display: flex;
+    
+}
+
+.divVideos img{
+    width: 360px;
+}
+
+.jobsArea{
+    display: flex;
+    justify-content: space-between
+}
+
+.sessionTable{
+    margin-top: 50px;
+}
+
+.finish{
+    margin: 20px;
+}
+
+.vidInt{
+    width: 425px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 10px;
+
+}
+  
+@media (max-width: 768px) {
+
+    .paragrafs {
+        max-width: 100%;
+        padding: 0 10px;
+        margin-left: 0px;
+
+
+      }
+  
+      .details {
+        padding: 0;
+      }
+
+    .informs{
+        display: flex;
+        flex-direction: column;
+    }
+    .details{
+        margin-top: 30px;
+        padding-left: 0px;
+        
+    }
+
+    .photoStart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .divVideos{
+        display: flex;
+       flex-direction: column;
+      
+    }
+
+    .vidInt{
+        width: 305px;
+        height: 200px;
+        border-radius: 8px;
+        margin: 10px;
+    
+    }
+
+
+}

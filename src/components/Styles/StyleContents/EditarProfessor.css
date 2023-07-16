@@ -1,0 +1,9 @@
+.icon-size-edit-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.icon-size-edit-1 , h4{
+color: #13304C;
+font-weight: 900;
+}

@@ -1,0 +1,24 @@
+.nav-edit{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(3, 17, 31, 0.7);
+
+}
+#link-nav{
+    color: #fff;
+}
+.link-nav-login{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #0094FF;
+    padding-right: 5px;
+}
+#icon-nav{
+   color: #037DF8;
+   font-size: 14pt;
+}
+#logo-nav{
+    width: 160px;
+}

@@ -1,0 +1,86 @@
+
+.content-container {
+  position: relative;
+  padding-top: 90vh;
+}
+
+.hero-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Imagens/banner-01.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-section .hero-content {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  height: 100%;
+  z-index: 1;
+}
+.circullo-edicao{
+  color: #F7971D;
+  width: 10px;
+  height: 10px;
+}
+#circle-edit{
+  color: #F7971D;
+  font-size: 19pt;
+
+}
+.hero-section .hero-content h1 {
+  font-size: 5.5rem;
+  color: white;
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hero-section .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  #circle-edit{
+    color: #F7971D;
+    font-size: 12pt;
+  
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+.tx-cont {
+  text-align: center;
+  margin-top: 6rem;
+  
+}
+
+.tx-cont h1 {
+  font-size: 3.5rem;
+  display: flex;
+  text-align: left;
+  color: #13304D;
+  font-family: 'Rambla', sans-serif;
+}
+

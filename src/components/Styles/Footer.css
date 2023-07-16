@@ -1,0 +1,104 @@
+.footer {
+    background-color: #13304C;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo-name {
+    font-family: 'Rambla', sans-serif;
+    margin-top: 0;
+    font-size: 39pt;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .footer-column {
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .footer-text {
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .footer-heading {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Rambla', sans-serif;
+    font-weight: 600;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    color: #F7971D;
+    font-size: 20px;
+  }
+  #icon-locarion-info{
+    color: #F7971D; 
+
+  }
+  #icon-locarion-info-size{
+    color: #F7971D; 
+    font-size: 20pt;
+  }
+  #icon-locarion-info-timer{
+    color: #F7971D; 
+    font-size: 16pt;
+  }
+  .location-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  .location-info span {
+    margin-left: 10px;
+  }
+  .info-list, li, a{
+    color: #fff;
+    
+  }
+  .footer-button{
+    background-color: #07131F;
+  }
+
+  .info-list li,
+  .location-list li {
+    margin-bottom: 10px;
+    color: #333;
+    list-style-type: none;
+    position: relative;
+    padding-left: 5px;
+  }
+  
+  .info-list li::before,
+  .location-list li::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 7px;
+    padding-right: 10px;
+    border-radius: 2px;
+    background-color: #F7971D;
+    margin-right: 50px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+  }
+  
+  a {
+    text-decoration: none;
+  }
